@@ -1,7 +1,5 @@
 import pygame
 
-import os
-print(os.getcwd())
 
 pygame.init()
 SCREEN_WIDTH, SCREEN_HEIGHT = 500, 500
