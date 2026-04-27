@@ -56,7 +56,7 @@ while running:
 
     if won:
         win_text = font.render("You Win!", True, pygame.Color('black'))
-        text_rect = win_text.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2))
+        text_rect = win_text.get_rect(center = (SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2))
         screen.blit(win_text, text_rect)
 
     pygame.display.flip()
