@@ -21,15 +21,6 @@ sp2.rect.y = 150
 all_sprites_list.add(sp1)
 all_sprites_list.add(sp2)
 
-pressed = pygame.key.get_pressed()
-if pressed[pygame.K_LEFT]:
-    sp1.rect.x -= 5
-if pressed[pygame.K_RIGHT]:
-    sp1.rect.x += 5
-if pressed[pygame.K_UP]:   
-    sp1.rect.y -= 5
-if pressed[pygame.K_DOWN]:
-    sp1.rect.y += 5
 
 done = False
 while not done:
@@ -40,6 +31,17 @@ while not done:
     all_sprites_list.update()
     screen.fill((255, 255, 255))
     all_sprites_list.draw(screen)
+    
+    pressed = pygame.key.get_pressed()
+    if pressed[pygame.K_LEFT]:
+        sp1.rect.x -= 1
+    if pressed[pygame.K_RIGHT]:
+        sp1.rect.x += 1
+    if pressed[pygame.K_UP]:   
+        sp1.rect.y -= 1
+    if pressed[pygame.K_DOWN]:
+        sp1.rect.y += 1
+
     pygame.display.flip()
 
 pygame.quit()
